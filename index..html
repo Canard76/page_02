@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube Studio – Redirection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Redirection automatique après 2 secondes -->
+    <meta http-equiv="refresh" content="2; url=https://studio.youtube.com/channel/UC2gTdKTUk24AmByoya-bRjQ/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D">
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            background: #181818;
+            padding: 2.5rem 3rem;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+            text-align: center;
+            max-width: 420px;
+            width: 90%;
+            animation: fadeIn 0.8s ease;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 1.6rem;
+        }
+
+        p {
+            color: #bbbbbb;
+            margin-bottom: 2rem;
+        }
+
+        .spinner {
+            width: 36px;
+            height: 36px;
+            border: 4px solid #2c2c2c;
+            border-top: 4px solid #ff0000;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            animation: spin 1s linear infinite;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 0.8rem 1.6rem;
+            background: #ff0000;
+            color: #fff;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        a.button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255,0,0,0.35);
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="spinner"></div>
+        <h1>Redirection vers YouTube Studio</h1>
+        <p>Tu vas être redirigé automatiquement vers la page d’upload.</p>
+
+        <a class="button"
+           href="https://studio.youtube.com/channel/UC2gTdKTUk24AmByoya-bRjQ/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D">
+            Ouvrir maintenant
+        </a>
+    </div>
+
+</body>
+</html>
+
